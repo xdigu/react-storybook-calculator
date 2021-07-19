@@ -1,4 +1,4 @@
-.storybook-button {
+.button {
   border: 0;
   border-radius: 50px;
   cursor: default;
@@ -7,70 +7,69 @@
   transition: background-color 0.5s ease-in;
 }
 
-.storybook-button--number,
-.storybook-button--large_number,
-.storybook-button--operator,
-.storybook-button--light {
+.button--number,
+.button--large_number,
+.button--operator,
+.button--light {
   color: #fff;
 }
 
-.storybook-button--number,
-.storybook-button--operator,
-.storybook-button--light {
+.button--number,
+.button--operator,
+.button--light {
   min-width: 50px;
 }
 
-.storybook-button--large_number,
-.storybook-button--number {
+.button--large_number,
+.button--number {
   background-color: #505050;
 }
 
-.storybook-button--number {
+.button--number {
   font-size: 20px;
 }
 
-.storybook-button--large_number {
+.button--large_number {
   font-size: 20px;
   min-width: 100px;
-  /* background-color: #1C1C1C; */
 }
 
-.storybook-button--operator {
+.button--operator {
   font-size: 20px;
 }
 
-.storybook-button--light {
+.button--light {
   background-color: #d4d4d2;
   color: #000;
   font-size: 20px;
 }
 
-.storybook-button--number:active,
-.storybook-button--large_number:active,
-.storybook-button--operator:active,
-.storybook-button--light:active {
+.button--number:active,
+.button--large_number:active,
+.button--operator:active,
+.button--light:active {
   transition: background-color 0.1s ease-in;
 }
 
-.storybook-button--number:active,
-.storybook-button--large_number:active {
+.button--number:active,
+.button--large_number:active {
   background-color: #7e7e7e;
 }
 
-.storybook-button--light:active {
+.button--light:active {
   background-color: #f0f0f0;
 }
 
-.storybook-button--operator:active {
+.button--operator:active {
   background-color: #f7cd92;
 }
 
-.storybook-button--operator-clicked {
+.button--operator-clicked {
   background-color: "#FFF";
   color: #ff9500;
 }
 
-.storybook-button--operator-unclicked {
+.button--operator-unclicked {
   background-color: #ff9500;
   color: #fff;
 }

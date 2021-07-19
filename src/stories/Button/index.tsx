@@ -25,7 +25,7 @@ const Button: React.FC<Props> = ({
   return (
     <button
       type="button"
-      className={cssHandler("storybook-button", modifiers)}
+      className={cssHandler("button", modifiers)}
       onClick={onClick}
     >
       {label}
