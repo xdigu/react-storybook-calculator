@@ -10,13 +10,16 @@ const parseModifiers = (baseClass: string, modifiers: string[]) => {
 
 const parseModifiersPipe = pipe(parseModifiers, map(toLower), join(" "));
 
+const sanitizeModifiers = (modifiers?: string[] | string) => {
+  if (!modifiers) return [];
+
+  if (typeof modifiers === "string") return [modifiers];
+
+  return [...modifiers];
+};
+
 const cssHandler = (baseClass: string, modifiers?: string[] | string) => {
-  const sanitizedModifiers =
-    typeof modifiers === "string"
-      ? [modifiers]
-      : modifiers
-      ? [...modifiers]
-      : [];
+  const sanitizedModifiers = sanitizeModifiers(modifiers);
 
   return parseModifiersPipe(baseClass, sanitizedModifiers);
 };
