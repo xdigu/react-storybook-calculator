@@ -44,6 +44,16 @@
   font-size: 20px;
 }
 
+.button--operator {
+  background-color: #ff9500;
+  transition: color 0.5s;
+}
+
+.button--operator:focus {
+  background-color: #fff;
+  color: #ff9500;
+}
+
 .button--number:active,
 .button--large_number:active,
 .button--operator:active,
@@ -62,14 +72,4 @@
 
 .button--operator:active {
   background-color: #f7cd92;
-}
-
-.button--operator-clicked {
-  background-color: "#FFF";
-  color: #ff9500;
-}
-
-.button--operator-unclicked {
-  background-color: #ff9500;
-  color: #fff;
 }

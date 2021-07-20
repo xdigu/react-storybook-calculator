@@ -14,18 +14,12 @@ interface Props {
 const Button: React.FC<Props> = ({
   label,
   buttonType = "NUMBER",
-  isLastClicked = false,
   onClick = () => {},
 }) => {
-  const modifiers = [
-    buttonType,
-    `${buttonType}-${isLastClicked ? "clicked" : "unclicked"}`,
-  ];
-
   return (
     <button
       type="button"
-      className={cssHandler("button", modifiers)}
+      className={cssHandler("button", buttonType)}
       onClick={onClick}
     >
       {label}
